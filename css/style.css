@@ -142,6 +142,7 @@ section::before{
   flex-direction: column;
   gap: 1rem;
   cursor: pointer;
+  
 }
 .slide:hover{
     box-shadow: 2px 2px 15px var(--primary);
@@ -159,6 +160,7 @@ section::before{
   background: linear-gradient(45deg,var(--gradiant));
   z-index: -1;
   transition: 300ms;
+  border-radius: 0 600px 0 0px;
 }
 .slide::before {
   content: "";
@@ -173,6 +175,7 @@ section::before{
 }
 .slide:hover:after {
   transform: scale(1);
+  border-radius: 0 0 0 0px;
 }
 .imageBox {
     max-height: 250px;
