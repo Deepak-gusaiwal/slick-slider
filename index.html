@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slick slider (jquery plugin)</title>
+  </head>
+  <!-- slider (silck js liberary) css -->
+  <link rel="stylesheet" href="./css/slider css/slick.css" />
+  <link rel="stylesheet" href="./css/slider css/slick-theme.css" />
+
+  <!-- our css file -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" media="(max-width:768px)" href="./css/tablet.css" />
+  <link rel="stylesheet" media="(max-width:425px)" href="./css/mobile.css" />
+  <body>
+    <section>
+      <!-- services Banner -->
+      <div class="BannerSection">
+        <h2 class="primaryHeading">Services</h2>
+        <p class="paramain">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <p class="paramain">Lorem, ipsum dolor sit amet .</p>
+      </div>
+
+      <!-- slider Container started -->
+      <div class="sliderContainer">
+        <div class="slide">
+          <div class="imageBox">
+            <img src="./images/img.png" alt="" />
+          </div>
+          <div class="slideContent">
+            <h3 class="secondaryHeading">Project-1</h3>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+              sequi excepturi quae? Architecto molestias fugit id quidem odio
+              voluptatum nemo?
+            </p>
+            <button class="btn">
+              <a href="#">Read More >></a>
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="imageBox">
+            <img src="./images/img4.jpg" alt="" />
+          </div>
+          <div class="slideContent">
+            <h3 class="secondaryHeading">Project-2</h3>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+              sequi excepturi quae? Architecto molestias fugit id quidem odio
+              voluptatum nemo?
+            </p>
+            <button class="btn">
+              <a href="#">Read More >></a>
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="imageBox">
+            <img src="./images/img3.jpg" alt="" />
+          </div>
+          <div class="slideContent">
+            <h3 class="secondaryHeading">Project-3</h3>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+              sequi excepturi quae? Architecto molestias fugit id quidem odio
+              voluptatum nemo?
+            </p>
+            <button class="btn">
+              <a href="#">Read More >></a>
+            </button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="imageBox">
+            <img src="./images/img4.jpg" alt="" />
+          </div>
+          <div class="slideContent">
+            <h3 class="secondaryHeading">Project-4</h3>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+              sequi excepturi quae? Architecto molestias fugit id quidem odio
+              voluptatum nemo?
+            </p>
+            <button class="btn">
+              <a href="#">Read More >></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- slider Container ended -->
+    </section>
+
+    <!-- jquery file -->
+    <script src="./js/jquery.js"></script>
+    <!-- slider (silck js liberary) js -->
+    <script src="./js/slider js/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".sliderContainer").slick({
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          autoplay:true,
+          responsive: [
+            {
+              breakpoint: 920,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            }
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

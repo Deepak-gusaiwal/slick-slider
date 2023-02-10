@@ -1,0 +1,11 @@
+  /* custom slide */
+  .slick-prev {
+    left: 0px;
+    top:50%;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 14px;
+   top: 50%;
+  }
+ 

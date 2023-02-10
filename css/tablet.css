@@ -1,0 +1,26 @@
+section{
+    padding: 1rem 0.3rem;
+}
+
+.primaryHeading {
+    font-size: 1.8rem;
+  }
+  .secondaryHeading {
+    font-size: 1.2rem;
+  }
+  .paramain {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  /* customize slider */
+.slick-prev {
+    right: 14px;
+    top:42%;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 14px;
+    bottom: 42%;
+  }
+ 
